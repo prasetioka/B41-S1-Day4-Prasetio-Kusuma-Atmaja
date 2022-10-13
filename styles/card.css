@@ -1,0 +1,153 @@
+.container-card {
+    background-color:#f9f9f9;
+    display: flex;
+    justify-content: center;
+    margin: 7vh 20vw 50px 20vw;
+    padding: 3vw;
+    box-shadow: 0px 5px 50px gray;
+    border-radius: 10px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3vw;
+}
+
+.card-description h1 {
+    font-size: 25px;
+    margin-bottom: 3vh;
+}
+
+.card-description p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 3vh;
+}
+
+.card-button {
+    margin-bottom: 3vh;
+}
+
+.card-button a button {
+    font-size: 18px;
+    border: none;
+    padding: 6px 30px;
+}
+
+.a-contact button {
+    background-color: black;
+    color: #f9f9f9;
+    border-radius: 50px;
+}
+
+.a-contact button:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.a-download button {
+    background-color: #f9f9f9;
+}
+
+.a-download button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.card-icon ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 15px;
+}
+
+.card-icon ul li a {
+    font-size: 35px;
+    color: black;
+}
+
+.card-icon ul li a:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #e3e7eb;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 20px;
+    box-shadow: -5px 5px 5px grey;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.my-name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.my-name h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.my-name h3 {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        padding: 6vw;
+        margin: 7vh 6vw 6vw 6vw;
+        box-shadow: 0px 5px 25px gray;
+    }
+
+    .card-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+    }
+
+    .card-button a button {
+        font-size: 15px;
+        padding: 6px 20px;
+    }
+
+    .card-icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+    }
+
+    .card-icon ul li a {
+        font-size: 30px;
+    }
+
+    .card-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-left {
+        padding: 0;
+    }
+
+    .card-description h1 {
+        font-size: 18px;
+        margin-bottom: 1vh;
+    }
+
+    .card-description p {
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 3vh;
+    }
+}

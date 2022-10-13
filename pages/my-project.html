@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/my-project.css">
+    <link rel="stylesheet" href="../styles/section-project.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><a href="https://dumbways.id/"><img src="../assets/logo-dumbways.png"></a></li>
+                <li><a href="../index.html" class="a-home">Home</a></li>
+                <li><a href="../pages/my-project.html" class="a-project">My Project</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="../pages/contact-me.html"><button>Contact Me</button></a>
+        </div>
+    </nav>
+
+    <form onsubmit="AddProject(event)">
+        <h1>ADD MY PROJECT</h1>
+        <div class="project-name">
+            <label for="input-title">Project Name</label>
+            <input id="input-title" type="text" placeholder="New Project" required>
+        </div>
+        <div class="project-date">
+            <div>
+                <label for="start-date">Start Date</label>
+                <input id="start-date" type="date" placeholder="Project Started">
+            </div>
+            <div>
+                <label for="end-date">End Date</label>
+                <input id="end-date" type="date" placeholder="Project Finished">
+            </div>
+        </div>
+        <div>
+            <label for="project-description">Desciption</label>
+            <textarea id="project-description" placeholder="Project Description"></textarea>
+        </div>
+        <div class="project-tech">
+            <label for="tech-option">Technologies</label>
+            <div id="tech-option" class="tech-option">
+                <div>
+                    <input type="checkbox" id="tech-list" name="node-js" value="Node Js">
+                    <label for="node-js">Node Js</label><br>
+                    <input type="checkbox" id="tech-list" name="react-js" value="React Js">
+                    <label for="react-js">React Js</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tech-list" name="next-js" value="Next Js">
+                    <label for="next-js">Next Js</label><br>
+                    <input type="checkbox" id="tech-list" name="typescript" value="TypeScript">
+                    <label for="typescript">TypeScript</label>
+                </div>
+                
+            </div>
+        </div>
+        <div class="project-image">
+            <label for="upload-image">Upload Image</label>
+            <input type="file" id="upload-image" class="upload-image">
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+
+    <hr/>
+    
+    <div class="section-project">
+        <h1>MY PROJECT</h1>
+
+        <div class="grid-container">
+            <div class="card-project">
+                <img src="../assets/code.jpg">
+                <h2>Dumbways Mobile App - 2022</h2>
+                <h3>durasi: 3 bulan</h3>
+                <p>App that used for dumbways student, it was deployed and can be downloaded on playstore.<br>Happy Download.</p>
+                <div class="card-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-android"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-java"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+    
+            <div class="card-project">
+                <img src="../assets/code.jpg">
+                <h2>Dumbways Mobile App - 2022</h2>
+                <h3>durasi: 3 bulan</h3>
+                <p>App that used for dumbways student, it was deployed and can be downloaded on playstore.<br>Happy Download.</p>
+                <div class="card-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-android"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-java"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+    
+            <div class="card-project">
+                <img src="../assets/code.jpg">
+                <h2>Dumbways Mobile App - 2022</h2>
+                <h3>durasi: 3 bulan</h3>
+                <p>App that used for dumbways student, it was deployed and can be downloaded on playstore.<br>Happy Download.</p>
+                <div class="card-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-android"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-java"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+    
+            <div class="card-project">
+                <img src="../assets/code.jpg">
+                <h2>Dumbways Mobile App - 2022</h2>
+                <h3>durasi: 3 bulan</h3>
+                <p>App that used for dumbways student, it was deployed and can be downloaded on playstore.<br>Happy Download.</p>
+                <div class="card-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-android"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-java"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+<script src="../scripts/my-project.js"></script>
+</html>

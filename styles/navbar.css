@@ -1,0 +1,97 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    font-family: Bahnschrift;
+}
+
+body {
+    background-color: #e3e7eb;
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+}
+
+.a-home {
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration:underline;
+}
+
+nav ul li img {
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 20vw;
+}
+
+.nav-left {
+    flex: 70%;
+}
+
+.nav-right {
+    flex: 30%;
+    text-align: end;
+    margin-right: 20vw;
+}
+
+.nav-right button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-right button:hover {
+    background-color: orangered;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        height: 6vh;
+    }
+
+    nav ul {
+        gap: 6vw;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .nav-right button {
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    nav ul li img {
+        width: 30px;
+        margin-left: 6vw;
+    }
+
+    .nav-right {
+        margin-right: 6vw;
+    }
+}
